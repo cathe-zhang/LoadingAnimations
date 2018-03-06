@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <title>Document</title>
+	    <style>
+	    	body {
+	    		background-color: #00c1de;
+	    	}
+	    	li {
+	    		list-style-type: none;
+	    	}
+	    	.box {
+	    		height: 200px;
+	    		position: absolute;
+	    		left: 50%;
+	    		top: 50%;
+	    		transform: translate(-50%,-50%);
+	  			width: 150px;
+	  			margin: 0 auto;
+	    	}
+	    	.box li {
+	    		position: absolute;
+	    		bottom: 0;
+	    		width: 8%;
+	    		height: 20px;
+	    		background-color: #45aafa;
+	    		margin: 0 10px;
+	    	}
+	    	@keyframes loadingAnimate {
+	    		0% {
+	    			transform: scaleY(1);
+	    		}
+	    		20% {
+	    			transform: scaleY(5);
+	    		}
+	    		40% {
+	    			transform: scaleY(1);
+	    		}
+	    		75% {
+	    			transform: scaleY(1);
+	    		}
+	    		100% {
+	    			transform: scaleY(1);
+	    		}
+	    	}
+	    	.temp01 {
+	    		left: 0%;
+	    		animation: loadingAnimate 2.5s 0.25s infinite;
+	    	}
+	    	.temp02 {
+	    		left: 10%;
+	    		animation: loadingAnimate 2.5s 0.5s infinite;
+	    	}
+	    	.temp03 {
+	    		left: 20%;
+	    		animation: loadingAnimate 2.5s 0.75s infinite;
+	    	}
+	    	.temp04 {
+	    		left: 30%;
+	    		animation: loadingAnimate 2.5s 1.0s infinite;
+	    	}
+	    	.temp05 {
+	    		left: 40%;
+	    		animation: loadingAnimate 2.5s 1.25s infinite;
+	    	}
+	    	.temp06 {
+	    		left: 50%;
+	    		animation: loadingAnimate 2.5s 1.5s infinite;
+	    	}
+	    	.temp07 {
+	    		left: 60%;
+	    		animation: loadingAnimate 2.5s 1.75s infinite;
+	    	}
+	    	.temp08 {
+	    		left: 70%;
+	    		animation: loadingAnimate 2.5s 2.0s infinite;
+	    	}
+	    </style>
+	</head>
+	<body>
+		<ul class="box">
+		 	<li class="temp01"></li>
+		 	<li class="temp02"></li>
+		 	<li class="temp03"></li>
+		 	<li class="temp04"></li>
+		 	<li class="temp05"></li>
+		 	<li class="temp06"></li>
+		 	<li class="temp07"></li>
+		 	<li class="temp08"></li>
+		 </ul> 
+	</body>
+</html>
